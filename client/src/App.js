@@ -1,10 +1,10 @@
 import React from 'react';
-
+import 'materialize-css'
 
 function App() {
   return (
-    <div className="App">
-      Hi
+    <div className="container">
+      <h1>Hello</h1>
     </div>
   );
 }
