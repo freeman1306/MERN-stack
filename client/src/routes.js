@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import LinksPage from './pages/LinksPage'
-import CreatePage from './pages/CreatePage'
+import LinksPage from './pages/LinksPage.jsx'
+import {CreatePage} from './pages/CreatePage'
 import DetailsPage from './pages/DetailsPage'
 import AuthPage from './pages/AuthPage'
 
@@ -18,7 +18,7 @@ export const useRoutes = isAuthenticated => {
                 <Route path="/create" exact>
                     <CreatePage/>
                 </Route>
-                <Route path="/detail/" exact>
+                <Route path="/detail/:id" >
                     <DetailsPage/>
                 </Route>
                 <Redirect to="/create" />
